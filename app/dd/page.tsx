@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 import Header from "../../components/ui/header";
-import Hero from "../components/hero";
+import { Hero } from "../components/hero";
 import EventsGrid, { Event } from "../../components/ui/event";
 import { getEvents } from "../../components/ui/datafeed";
 import LoadingScreen from "@/components/ui/load";
