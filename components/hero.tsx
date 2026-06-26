@@ -4,7 +4,7 @@ type HeroProps = {
   search: string;
   setSearch: (value: string) => void;
 };
-const Hero: React.FC<SearchBarProps> = ({ search, setSearch }) => {
+const Hero: React.FC<HeroProps> = ({ search, setSearch }) => {
   return (
     <section className="mx-auto max-w-2xl space-y-6 py-16 text-center">
       <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
