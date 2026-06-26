@@ -6,9 +6,9 @@ async function handleSubmit(formData: FormData) {
   'use server';
 
   const session = await authe();
-  if (session?.user) {
-    redirect('/dd'); 
-  }
+  // if (session?.user) {
+  //   redirect('/dd'); 
+  // }
   
 
   const email = formData.get('email') as string;
