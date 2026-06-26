@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 import Header from "../../components/ui/header";
-import  Hero  from "../components/hero";
+// import  Hero  from "../components/hero";
 import EventsGrid, { Event } from "../../components/ui/event";
 import { getEvents } from "../../components/ui/datafeed";
 import LoadingScreen from "@/components/ui/load";
@@ -69,7 +69,7 @@ export default function ClientHome() {
           {/* Hero Section Container */}
           <div className="relative bg-slate-900/10 border border-slate-900/80 rounded-3xl p-2 sm:p-4 backdrop-blur-sm overflow-hidden group hover:border-slate-800/60 transition-all duration-500">
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500/20 to-transparent" />
-            <Hero search={search} setSearch={setSearch} />
+            {/* <Hero search={search} setSearch={setSearch} /> */}
           </div>
 
           {/* Events Segment Layout Grid */}
