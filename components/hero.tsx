@@ -4,7 +4,7 @@ type HeroProps = {
   search: string;
   setSearch: (value: string) => void;
 };
-export default function Hero({ search, setSearch }: HeroProps) {
+const Hero: React.FC<HeroProps> = ({ search, setSearch }) => {
   return (
     <section className="mx-auto max-w-2xl space-y-6 py-16 text-center">
       <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
@@ -31,3 +31,5 @@ export default function Hero({ search, setSearch }: HeroProps) {
     </section>
   );
 }
+
+export default Hero;
